@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="LLM-as-a-judge">
+  <meta name="keywords" content="LLM, Large Language Model, Misinformation, fake news">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LLM-as-a-judge</title>
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<!-- <meta name="generator" content="Jekyll v3.9.3" /> -->
+<meta property="og:title" content="LLM-as-a-judge" />
+<meta property="og:locale" content="en_US" />
+<link rel="canonical" href="https://llm-as-a-judge.github.io/" />
+<meta property="og:url" content="https://llm-as-a-judge.github.io/" />
+<meta property="og:site_name" content="LLM-as-a-judge" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://llm-as-a-judge.github.io/static/images/logo.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="LLM-as-a-judge" />
+<meta name="twitter:description" content="LLM-as-a-judge." />
+<meta name="twitter:site" content="@CanyuChen3" />
+<meta name="twitter:image" content="https://llm-as-a-judge.github.io/static/images/logo.png" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","headline":"LLM-as-a-judge","name":"LLM-as-a-judge","url":"https://llm-as-a-judge.github.io/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/icon.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+
+  <style>
+    .grey-box {
+        background-color: #c0c0c0; /* Grey color */
+        color: rgb(70, 70, 70); /* White text color */
+        padding: 20px; /* Padding inside the box */
+        margin: 20px; /* Margin outside the box */
+        text-align: center; /* Center the text */
+    }
+  </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <!-- <div class="logo">
+            <img src="static/images/logo_1.png" width="600"/>
+          </div> -->
+          <!-- <br/> -->
+          <div class="column has-text-centered">
+            <!-- <img src="static/images/logo.png" alt="Purity" width="60" height="60" /> -->
+            <img src="static/images/logo_1.png" alt="LLM-as-a-judge" width="900"/>
+            <h1 class="title is-4 publication-title">This is an initiative survey and paper list aiming to employ LLM to improve data science
+            </h1>
+            <h1 class="title is-5 publication-title">(Correspondence to: <a href="https://david-li0406.github.io/" target="_blank">Dawei Li</a>)
+            </h1>
+            <ul>
+
+              <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                <div class="content has-text-justified">
+
+                  <a href="https://arxiv.org/pdf/2411.16594"> (Arixiv Version) <b>Large Language Models for Data Science: A Survey</b></a>
+                  <br>
+                   - A survey of the opportunities and challenges of LLM-based data science agents and systems.
+                  <br>
+                  - In this survey, we delve into the role of LLMs in the data science cycle, specialized domain applications, challenges and limitations, and social impact and future directions.
+                  <!-- <br> -->
+                  </div>
+              </div>
+              </div>
+
+            </ul>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 id="From-Generation-to-Judgment:-Opportunities-and-Challenges-of-LLM-as-a-judge" class="title is-2 publication-title">From Generation to Judgment: Opportunities and Challenges of LLM-as-a-judge
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://songw-sw.github.io/
+              ">Song Wang</a>,</span>
+              <span class="author-block">
+                <a href="https://zhen-tan-dmml.github.io/
+              ">Zhen Tan</a>,</span>
+              <span class="author-block">
+                <a href="https://chen-1031.github.io/
+              ">Zihan Chen</a>,</span>
+              <span class="author-block">
+                <a href="https://david-li0406.github.io/
+              ">Dawei Li</a>,</span>
+              <span class="author-block">
+                <a href="https://www.ychzhu.com/
+              ">Yaochen Zhu</a>,</span>
+              <span class="author-block">
+                <a href="https://jiangbohan.github.io/
+              ">Bohan Jiang</a>,</span>
+              <span class="author-block">
+                <a href="https://yinhanhe123.github.io/
+              ">Yinhan He</a>,</span>
+              <span class="author-block">
+                <a href="https://chengshuaizhao0.github.io/
+              ">Chengshuai Zhao</a>,</span>
+              <span class="author-block">
+                <a href="https://lzyfischer.github.io/
+              ">Zhenyu Lei</a>,</span>
+              <span class="author-block">
+                <a href="https://openreview.net/profile?id=~Paras_Sheth1
+              ">Paras Sheth</a>,</span>
+              <span class="author-block">
+                <a href="https://lichili233.github.io/
+              ">Lichi Li</a>,</span>
+              <span class="author-block">
+                <a href="https://openreview.net/profile?id=~Lo_Pang-Yun_Ting1
+              ">Lo Pang-Yun Ting</a>,</span>
+              <span class="author-block">
+                <a href="https://jundongli.github.io/
+              ">Jundong Li</a>,</span>
+              <span class="author-block">
+                <a href="https://www.public.asu.edu/~huanliu/
+              ">huan liu</a>,</span>
+              <span class="author-block">
+            </div>
+
+            <div class="is-size-5 publication-authors">
+                <div class="author-block">University of Virginia, </div>
+                <div class="author-block">Arizona State University, </div>
+                <div class="author-block">Cisco Systems, Inc.</div>
+            </div>
+
+            <!-- to be replaced -->
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/2411.16594" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2411.16594" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Arxiv</span>
+                  </a>
+                </span>
+
+                <span class="link-block">
+                  <a href="https://github.com/llm-as-a-judge/Awesome-LLM-as-a-judge"
+                     class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Paper List</span>
+                    </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+
+    <div class="container is-max-desktop">
+      <!-- Method -->
+      <!-- <br /> -->
+      <figure style="text-align: center;">
+        <img src="static/images/survey.png" alt="survey">
+      </figure>
+    </div>
+    <br>    <br>
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>Data science is an interdisciplinary field that focuses on extracting knowledge from raw data using statistical analysis and machine learning techniques. However, as data continues to grow in scale and complexity, data scientists face increasing challenges in handling unstructured data, automating workflows, and scaling analytical processes. The advancements of large language models (LLMs) present an unprecedented opportunity to enhance and streamline data science tasks by enabling automation and augmentation of key processes in the data science pipeline. This survey contributes to four core aspects: the role of LLMs in the data science cycle, specialized domain applications, challenges and limitations, and social impact and future directions. Furthermore, we introduce a structured framework defining how LLMs contribute to each stage of data science, provide an in-depth discussion on their applications in key domains such as healthcare and finance, analyze key obstacles such as data quality and model interpretability, and explore ethical concerns and future research opportunities. Serving as a comprehensive resource, this survey aims to assist researchers and practitioners in understanding and utilizing LLMs to advance modern data science methodologies.
+          </div>
+        </div>
+      </div>
+    </div>
+  <!-- </section>
+  <section class="section"> -->
+    <!-- <br>
+    <br>
+    <div class="container is-max-desktop">
+      <figure>
+        <img src="static/images/survey.png" alt="survey">
+      </figure>
+    </div> -->
+  </section>
+
+<!-- to be replaced -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{li2024llmasajudge,
+      title   = {From Generation to Judgment: Opportunities and Challenges of LLM-as-a-judge},
+      author  = {Dawei Li and Bohan Jiang and Liangjie Huang and Alimohammad Beigi and Chengshuai Zhao and Zhen Tan and Amrita Bhattacharjee and Yuxuan Jiang and Canyu Chen and Tianhao Wu and Kai Shu and Lu Cheng and Huan Liu},
+      year    = {2024},
+      journal = {arXiv preprint arXiv: 2411.16594}
+    }</code></pre>
+  </div>
+</section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+            <p>
+              This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source
+                code</a> of this website,
+              we just ask that you link back to this page in the footer.
+              Please remember to remove the analytics code included in the header of the website which
+              you do not want on your website.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- Default Statcounter code for llm-as-a-judge
+https://llm-as-a-judge.github.io/ -->
+<script type="text/javascript">
+  var sc_project=13064209; 
+  var sc_invisible=1; 
+  var sc_security="2f99ac8e"; 
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js" async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics"
+  href="https://statcounter.com/" target="_blank"><img class="statcounter"
+  src="https://c.statcounter.com/13064209/0/2f99ac8e/1/" alt="Web Analytics"
+  referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+  <!-- End of Statcounter Code -->
+</body>
+<script>
+  function changeContent() {
+    const dropdown = document.getElementById("dropdown");
+    const selected = dropdown.value;
+    const sections = ["example_1", "example_2", "example_3", "example_4", "example_5", "example_6", "example_7", "example_8", "example_9", "example_10", "example_11", "example_12", "example_13", "example_14"];
+
+    sections.forEach((section) => {
+      document.getElementById(section).style.display = (section === selected) ? "block" : "none";
+    });
+  }
+</script>
+
+
+
+
+</html>
